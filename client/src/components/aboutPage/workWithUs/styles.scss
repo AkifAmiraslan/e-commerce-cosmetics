@@ -1,0 +1,62 @@
+.work-with-us-container{
+    display: flex;
+    .section-1{
+        width: 60%;
+        background-color: #2A7CC7;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 24px;
+        padding: 10% 10%;
+        color: #FFF;
+        h3{
+            font-family: Playfair Display;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 26px;
+        }
+        h1{
+            font-family: Playfair Display;
+            font-size: 44px;
+            font-weight: 400;
+            line-height: 58px; 
+            letter-spacing: 0.2px;
+        }
+        p{
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+        }
+        button{
+            padding: 15px 40px;
+            width: 130px;
+            color: #FFF;
+            background-color:#2A7CC7;
+            border-radius: 5px;
+            border: 1px solid #FFF;
+        }
+    }
+    .section-2{ 
+        width: 40%;
+        img{
+            width: 100%;
+            
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .work-with-us-container{
+        .section-1{
+            width: 100%;
+            text-align: center;
+            padding-inline: 20%;
+            align-items:center;
+        }
+        .section-2{
+            display: none;
+            
+        }
+    }
+}

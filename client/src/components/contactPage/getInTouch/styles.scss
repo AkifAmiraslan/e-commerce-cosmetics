@@ -1,0 +1,62 @@
+.get-in-touch-container{
+    display: flex;
+    .section-1{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        padding: 112px 10%;
+        font-family: Playfair Display;
+        color: #252B42;
+        width: 60%;
+        h5{
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 26px;
+        }
+        h1{
+            font-size: 80px;
+            font-weight: 500;
+            line-height: 90px;
+            letter-spacing: 0.2px;
+        }
+        .about{
+            color: #737373;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+        }
+        .contact-number{
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 35px
+        }
+        .social-media-container{
+            display: flex;
+            gap: 35px;
+        }
+
+    }
+    .section-2{
+        img{
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .get-in-touch-container{
+        flex-direction: column;
+        .section-1{
+            text-align: center;
+            width: 100%;
+            h1{
+                font-size: 44px;
+                font-weight: 400;
+                line-height: 58px;
+            }
+            .social-media-container{
+                justify-content: center;
+            }
+        }
+    }
+}

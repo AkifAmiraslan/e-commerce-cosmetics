@@ -1,0 +1,44 @@
+.jobsecurity-container{
+    
+    display: flex;
+    margin-inline: 10%;
+    padding-block: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    .jobSecurity-section{
+        text-align: center;
+        width: 33%;
+        
+        h1{
+            font-family: Playfair Display;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 35px;
+            letter-spacing: 0.1px;
+            color: #252B42;
+        }
+        p{
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px; 
+            letter-spacing: 0.2px;
+            color:#737373;
+            margin-top: 10px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .jobsecurity-container{
+        flex-direction: column;
+        text-align: center;
+        padding-block: 0;
+        .jobSecurity-section{
+            width: 100%;
+            margin-block: 25px;
+            
+        }
+        
+    }
+}

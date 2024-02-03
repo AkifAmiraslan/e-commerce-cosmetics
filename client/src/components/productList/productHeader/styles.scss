@@ -1,0 +1,190 @@
+.header-product-container{
+    .follow-us{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #47AD97;
+        height: 58px;
+        color:#FFF;
+        gap: 30px;
+        .call-mail-section{
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0.2px;
+            display: flex;
+            gap: 10px;
+            .call-section, .mail-section{
+                display: flex;
+                align-items:center;
+                gap: 5px;
+                padding: 10px 10px
+            }
+        }
+        .title-section, .social-media-section{
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+        }
+        .social-media-section{
+            display: flex;
+            gap: 10px;
+            .icons-container{
+                display: flex;
+                gap: 5px;
+                img{
+                    width: 16px;
+                    filter: brightness(0) invert(1);
+                }
+            }
+            
+        }
+    }
+    .header-product{
+        display: flex;
+        padding: 15px 10%;
+        gap: 125px;
+        align-items:center;
+        .logo-menu-container{
+            .logo{
+                color:#252B42;
+                font-family: Playfair Display;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 35px;
+                
+            }
+            .menu{
+                display: none;
+                cursor:pointer;
+                &:hover {
+                    transform: translateY(-2px);
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                }
+            }
+        }
+        
+        .links{
+            display: flex;
+            align-items:center;
+            gap: 20px;
+            .link{
+                font-family: Playfair Display;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+                text-decoration: none;
+                color:#737373;
+                &:hover {
+                    transform: translateY(-3px);
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                }
+            }
+        }
+        .links-mobile{
+            display: none;
+        }
+        .shop-main-container{
+            display: flex;
+            .login-register{
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                gap:5px;
+                color:#23856D;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 24px; 
+                letter-spacing: 0.2px;
+                text-decoration:none;
+                &:hover {
+                    transform: translateY(-3px);
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                }
+            }
+            .shop-about{
+                display: flex;
+                .search-section, .cart-section, .likes-section{
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .header-product-container{
+        .follow-us{
+            display: none;
+        }
+        .header-product{
+            
+            gap:0;
+            flex-direction: column;
+            .logo-menu-container{
+                padding-block: 20px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .menu{
+                    display: block;
+                    font-family: Montserrat;
+                    font-size: 30px;
+                    color:#737373;
+                }
+            }
+            .links{
+                flex-direction: column;
+                padding-block: 20px;
+                display: none;
+                .link{
+                    font-family: Montserrat;
+                    font-size: 30px;
+                    font-weight: 400;
+                    line-height: 45px;
+                    letter-spacing: 0.2px;
+                }
+                &.show-links {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            .shop-main-container{
+                flex-direction: column;
+                gap: 15px;
+                display: none;
+                &.show-shop {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .login-register{
+                    font-family: Montserrat;
+                    font-size: 30px;
+                    font-weight: 400;
+                    line-height: 45px;
+                    letter-spacing: 0.2px;
+                    img{
+                        width: 27px;
+                    }
+                }
+                .shop-about{
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    
+                    div{
+                        img{
+                            width: 34px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

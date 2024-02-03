@@ -1,0 +1,30 @@
+.lets-talk-container{
+    color: #252B42;
+    font-family: Playfair Display;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    margin-block: 100px;
+    h3{
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+    }
+    h1{
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 90px;
+        letter-spacing: 0.2px;
+    }
+    button{
+        padding: 15px 40px;
+        color: #FFF;
+        background-color: #23856D;
+        border: 1px solid #23856D;
+        border-radius: 5px;
+    }
+}

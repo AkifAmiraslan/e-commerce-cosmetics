@@ -1,0 +1,84 @@
+.visit-office-container{
+    color: #252B42;
+    .title{
+        font-family: Playfair Display;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        margin-inline: 30%;
+        margin-bottom: 40px;
+        h4{
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+        }
+        h1{
+            font-size: 44px;
+            font-weight: 400;
+            line-height: 58px; 
+            letter-spacing: 0.2px;
+        }
+    }
+    .cart-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .cart{
+            text-align: center;
+            padding: 80px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            img{
+                width: 72px;
+                margin: 0 auto;
+            }
+            p{
+                color: #252B42;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 24px; 
+                letter-spacing: 0.2px;
+            }
+            .submit-container{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                h3{
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 24px;
+                }
+                button{
+                    padding: 15px 36px;
+                    color:#23856D;
+                    border: 1px solid #23856D;
+                    border-radius: 37px;
+                    background-color:#FFF;
+                }
+            }
+
+            &:nth-child(2){
+                background-color:#252B42;
+                *{
+                    color:#FFF;
+                    background-color:#252B42 !important;
+                }
+                
+            }
+
+        }
+    }
+    
+}
+@media screen and (max-width: 768px){
+    .visit-office-container{
+        .title{
+            margin-inline: 10%;
+        }
+    }
+}

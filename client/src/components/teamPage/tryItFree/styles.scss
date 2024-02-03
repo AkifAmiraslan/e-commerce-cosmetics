@@ -1,0 +1,43 @@
+.try-it-free-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-block: 100px;
+    h1{
+        color: #252B42;
+        font-family: Playfair Display;
+        font-size: 44px;
+        font-weight: 400;
+        line-height: 58px; 
+        letter-spacing: 0.2px;
+    }
+    p{
+        color:#737373;
+        font-family: Playfair Display;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px; 
+        letter-spacing: 0.2px;
+    }
+    button{
+        padding: 14px 40px;
+        width: 190px;
+        border: 1px solid #23856D;
+        background-color:#23856D;
+        border-radius: 5px;
+        color:#FFF;
+        font-family: Playfair Display;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0.2px;
+    }
+}
+@media  screen and (max-width: 768px) {
+    .try-it-free-container{
+        text-align: center;
+        padding-inline: 10%;
+    }
+}

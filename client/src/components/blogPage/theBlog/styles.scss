@@ -1,0 +1,31 @@
+.the-blog-container{
+    .title{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        padding: 50px 0;
+        h3{
+            color: #252B42;
+            font-family: Playfair Display;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 26px;
+        }
+        h1{
+            color: #252B42;
+            font-family: Playfair Display;
+            font-size: 80px;
+            font-weight: 500;
+            line-height: 90px;
+            letter-spacing: 0.2px;
+        }
+        p{
+            display: flex;
+            align-items: center;
+            color:#737373;
+            justify-content: center;
+            gap: 15px;
+        }
+    }
+}

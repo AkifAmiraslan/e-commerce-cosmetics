@@ -1,0 +1,139 @@
+.sign-up-page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    text-align: center;
+    font-family: Montserrat;
+    margin-inline: 30%;
+    margin-block: 80px;
+    .title{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-inline: 10%;
+
+        h1{
+            color:#252B42;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 50px; 
+            letter-spacing: 0.2px;  
+        }
+        p{
+            color:#737373;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+    }
+    .sign-up{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        .facebook-btn{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 22px; 
+            letter-spacing: 0.2px;
+            color:#FFF;
+            background-color: #23856D;
+            border: 1px solid #23856D;
+            border-radius: 5px;
+        }
+        .or-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px; 
+            letter-spacing: 0.2px;
+            color: #737373;
+            .line{
+                height:2px;
+                background-color:#ECECEC;
+                width: 120px;
+            }
+        }
+        .register{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            
+            div{
+                h5{
+                    text-align: left;
+                    margin-bottom: 20px;
+                }
+                input{
+                    width: 100%;
+                    height: 50px;
+                    background-color:#F9F9F9;
+                    border: 1px solid #E6E6E6;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    letter-spacing: 0.2px;
+                    padding-inline: 21px;
+                    border-radius: 5px;
+                }
+            }
+            .get-started-btn{
+                width: 100%;
+                height: 52px;
+                background-color:#2DC071;
+                border-radius: 5px;
+                border: 1px solid #2DC071;
+                color: #fff;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 22px;
+                letter-spacing: 0.2px;
+            }
+            .about-button{
+                text-align: left;
+                color: #737373;
+                font-family: Montserrat;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0.2px;
+            }
+            .sign-in-link{
+                color:#252B42;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                display: flex;
+                gap: 10px;
+                margin-inline: auto;
+                .link{
+                    text-decoration: none;
+                    color:#23856D;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .sign-up-page-container{
+        margin-inline: 10%;
+        .title{
+            margin-inline: 0;
+        }
+    }
+}

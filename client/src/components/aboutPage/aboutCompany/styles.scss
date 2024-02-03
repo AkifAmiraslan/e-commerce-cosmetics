@@ -1,0 +1,80 @@
+.about-company-container{
+    display: flex;
+    
+    padding-inline: 10%;
+    .section-1{
+        display: flex;
+        gap: 35px;
+        flex-direction: column;
+        justify-content: center;
+        h3{
+            font-family: Playfair Display;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26px;
+            color: #252B42;
+        }
+        h1{
+            font-family: Playfair Display;
+            font-size: 80px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 90px;
+            letter-spacing: 0.2px;
+            color: #252B42;
+        }
+        p{
+            font-family: Playfair Display;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px; 
+            letter-spacing: 0.2px;
+            color: #737373;
+        }
+        button{
+            padding: 15px 40px;
+            width: 180px;
+            color:#FFFFFF;
+            background-color: #23856D;
+            border: 1px solid #23856D;
+            border-radius: 5px;
+        }
+    }
+    .section-2{
+        img{
+            width:90%;
+            margin-left: 20%;
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .about-company-container{
+        flex-direction:column;
+        
+        .section-1{
+            text-align: center;
+            margin-block: 100px;
+            h3{
+                display: none;
+            }
+            h1{
+                font-size: 44px;
+                font-weight: 400;
+                line-height: 58px; 
+                letter-spacing: 0.2px;
+            }
+            button{
+                margin-inline: auto;
+            }
+        }
+        .section-2{
+            img{
+                margin-left: 0;
+                width: 100%;    
+            }
+            
+        }
+    }
+}

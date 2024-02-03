@@ -1,0 +1,100 @@
+.best-products{
+    display: flex;
+    padding-inline: 10%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background: linear-gradient(90deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%);
+    color: #FFF;
+    &-info{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50%;
+        h1{
+            font-family: Playfair Display;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26px; 
+            letter-spacing: 0.1px;
+        }
+        .huge-text{
+            font-family: Playfair Display;
+            font-size: 80px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 90px;
+            letter-spacing: 0.2px;
+        }
+        .huge-text-mobile{
+            display: none;
+        }
+        .small-text{
+            font-family: Playfair Display;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+            width: 70%;
+
+        }
+        .btn{
+            display: flex;
+            padding: 15px 36px;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            border-radius: 37px;
+            width: 30%;
+            border: 1px solid #FFF;
+            background-color: #0052D4;
+            color:#FFF;
+        }
+    
+    }
+    
+}
+@media screen and (max-width : 768px) {
+    .best-products{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        &-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            .huge-text{
+                display: none;
+            }
+            .huge-text-mobile{
+                display: block;
+                font-family: 'Playfair Display';
+                font-size: 44px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 58px;
+                letter-spacing: 0.2px;
+
+            }
+            .small-text{
+               width: 200px;
+               
+            }
+            .btn{
+                width: 100%;
+                
+            }
+        }
+        &-img{
+            img{
+                width: 100%;
+                
+            }
+            
+        }
+        
+    }
+}

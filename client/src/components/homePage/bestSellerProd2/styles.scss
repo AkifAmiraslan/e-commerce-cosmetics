@@ -1,0 +1,132 @@
+.best-seller-prod2-container{
+    margin-top: 100px;
+    margin-inline: 10%;
+    .best-seller-prod2-header{
+        display: flex;
+        position: relative;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #ECECEC;
+        h1{
+            font-family: Playfair Display;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 35px; 
+            color: #252B42;
+        }
+        .kinds{
+            display: flex;
+            gap:32px;
+            margin-left: 32px;
+            h5{
+                font-family: Playfair Display;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 20px; 
+                letter-spacing: 0.2px;
+                color:#737373;
+                position: relative;
+                &:hover {
+                    color: #23856d;
+                    cursor: pointer;
+            
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -3px;
+                        left: 0;
+                        width: 100%;
+                        height: 3px; 
+                        background-color: #23856d;
+                    }
+                }
+            }
+        }
+        .btns{
+            position: absolute;
+            right: 0;
+            display: flex;
+            gap: 15px;
+            button{
+                padding: 14px 20px;
+                border-radius: 34px;
+                border: 1px solid #BDBDBD;
+                background-color:#FFF;
+            }
+        }
+    }
+    .carts-container{
+        padding-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        .cart{
+            display: inline-block;
+            &:hover {
+                background-color: #f0f0f0; /* Və ya istədiyiniz bir rəng */
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Və ya istədiyiniz bir gölgə effekti */
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+            .info{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-block: 30px;
+                h1{
+                    font-family: Playfair Display;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 26px; 
+                    letter-spacing: 0.1px;
+                    color:#252B42;
+                }
+                p{
+                    font-family: Playfair Display;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px;
+                    letter-spacing: 0.2px;
+                    color:#737373;
+                }
+                .prices{
+                    display: flex;
+                    justify-content: center;
+                    gap: 5px;
+                    .old, .new{
+                        font-family: Playfair Display;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 20px; 
+                        letter-spacing: 0.2px;
+                    }
+                    .new{
+                        color:#47AD97;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .best-seller-prod2-container{
+        .best-seller-prod2-header{
+            flex-direction: column;
+            gap: 40px;
+            .btns{
+                position: relative;
+                justify-content: center;
+            }
+        }
+        .carts-container{
+            justify-content: center;
+        }
+    }
+}
